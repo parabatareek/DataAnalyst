@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <ol>
+            <li>
+                <a href="#import_libs">Импорт библиотек</a>
+            </li>
+            <li>
+                <a href="#data">Данные</a>
+            </li>
+            <ul>
+                <li>
+                    <a href="#data_view">Первичный осмотр данных</a>
+                </li>
+            </ul>
+            <li>
+                <a href="#prepare">Предобработка данных</a>
+            </li>
+            <ul>
+                <li>
+                    <a href="#prepare_columns">Переименование столбцов</a>
+                </li>
+                <li>
+                    <a href="#prepare_string">Обработка строковых значений</a>
+                </li>
+                <li>
+                    <a href="#prepare_year_of_release">Обогащение data['year_of_release']</a>
+                </li>
+                <li>
+                    <a href="#prepare_tbd_user_score">Замена значения "tbd" data['user_score']</a>
+                </li>
+                <li>
+                    <a href="#prepare_user_score">Изменение типа данных data['user_score'], масштабирование данных</a>
+                </li>
+                <li>
+                    <a href="#prepare_change_type">Изменение типов данных</a>
+                </li>
+                <li>
+                    <a href="#prepare_total_sales">Подсчет суммарных продаж во всех регионах</a>
+                </li>
+                <li>
+                    <a href="#prepare_duplicated">Поиск дубликатов</a>
+                </li>
+            </ul>
+            <li>
+                <a href="#analyze">Исследовательский анализ данных</a>
+            </li>
+            <ul>
+                <li>
+                    <a href="#analyze_total_games">График выхода игр</a>
+                </li>
+                <li>
+                    <a href="#analyze_platform_sales">График продаж игр для платформ</a>
+                </li>
+                <li>
+                    <a href="#analyze_actual_platform">График мировых продаж игр для платформ с 2011 года</a>
+                </li>
+                <li>
+                    <a href="#analyze_platform_boxplot">Диаграмма размаха мировых продаж для перспективных платформ</a>
+                </li>
+                <li>
+                    <a href="#analyze_corr_sales_score">Корреляция количества проданных копий с рейтингом критиков/пользователей</a>
+                </li>
+                <li>
+                    <a href="#analyze_games_genre">Распределение продаж по жанрам</a>
+                </li>
+            </ul>
+            <li>
+                <a href="#region_user">Пользовательские портреты</a>
+            </li>
+            <ul>
+                <li>
+                    <a href="#region_user_na">Северная Америка</a>
+                </li>
+                <ol>
+                    <li>
+                        <a href="#region_user_na_5_platform">Продажи игр для 5 популярных в Северной Америке платформ</a>
+                    </li>
+                    <li>
+                        <a href="#region_user_na_5_platform_genre">Популярность жанров на платформах</a>
+                    </li>
+                    <li>
+                        <a href="#region_user_na_5_genre">Кол-во проданных копий 5 популярных в Северной Америке жанров</a>
+                    </li>
+                    <li>
+                        <a href="#region_user_na_sales_esrb">Влияние рейтинга ESRB на продажи в Северной Америке</a>
+                    </li>
+                </ol>
+                <li>
+                    <a href="#region_user_eu">Европа</a>
+                </li>
+                <ol>
+                    <li>
+                        <a href="#region_user_eu_5_platform">Продажи игр для 5 популярных в Европе платформ</a>
+                    </li>
+                    <li>
+                        <a href="#region_user_eu_5_platform_genre">Популярность жанров на платформах</a>
+                    </li>
+                    <li>
+                        <a href="#region_user_eu_5_genre">Кол-во проданных копий 5 популярных в Европе жанров</a>
+                    </li>
+                    <li>
+                        <a href="#region_user_eu_sales_esrb">Влияние рейтинга ESRB на продажи в Европе</a>
+                    </li>
+                </ol>
+                <li>
+                    <a href="#region_user_jp">Япония</a>
+                </li>
+                <ol>
+                    <li>
+                        <a href="#region_user_jp_5_platform">Продажи игр для 5 популярных в Японии платформ</a>
+                    </li>
+                    <li>
+                        <a href="#region_user_jp_5_platform_genre">Популярность жанров на платформах</a>
+                    </li>
+                    <li>
+                        <a href="#region_user_jp_5_genre">Кол-во проданных копий 5 популярных в Японии жанров</a>
+                    </li>
+                    <li>
+                        <a href="#region_user_jp_sales_esrb">Влияние рейтинга ESRB на продажи в Японии</a>
+                    </li>
+                </ol>
+                <li>
+                    <a href="#region_user_other">Остальные страны</a>
+                </li>
+                <ol>
+                    <li>
+                        <a href="#region_user_other_5_platform">Продажи игр для 5 популярных в остальных странах платформ</a>
+                    </li>
+                    <li>
+                        <a href="#region_user_other_5_platform_genre">Популярность жанров на платформах</a>
+                    </li>
+                    <li>
+                        <a href="#region_user_other_5_genre">Кол-во проданных копий 5 популярных в остальных странах жанров</a>
+                    </li>
+                    <li>
+                        <a href="#region_user_other_sales_esrb">Влияние рейтинга ESRB на продажи в остальных странах</a>
+                    </li>
+                </ol>
+            </ul>
+            <li>
+                <a href="#hypothesis">Проверка гипотез</a>
+            </li>
+            <ul>
+                <li>
+                    <a href="#hypothesis_1">Пользовательские рейтинги платформ Xbox One и PC</a>
+                </li>
+                <li>
+                    <a href="#hypothesis_2">Пользовательские рейтинги жанров Action и Sports</a>
+                </li>
+            </ul>
+            <li>
+                <a id="#summary">Вывод</a>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
