@@ -1,0 +1,11 @@
+hypothesis,user_business_value,time_criticality,risk_reduction_opportunity_enablement,job_size
+hypothesis_1,10,10,10,1
+hypothesis_2,9,8,4,5
+hypothesis_3,4,5,7,10
+hypothesis_4,10,10,9,2
+hypothesis_5,4,8,2,8
+hypothesis_6,2,6,4,1
+hypothesis_7,3,1,9,2
+hypothesis_8,1,4,4,2
+hypothesis_9,3,10,1,1
+hypothesis_10,6,7,6,10
