@@ -88,8 +88,9 @@ app.layout = html.Div(children=[
 
 # описываем логику дашборда
 @app.callback(
-    [Output('sales_by_year', 'figure'),
-     ],
+    [
+        Output('sales_by_year', 'figure'),
+    ],
     [Input('dt_selector', 'start_date'),  # напишите код
      Input('dt_selector', 'end_date'),  # напишите код
      ])
